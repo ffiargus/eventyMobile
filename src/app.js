@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { eventReducer } from './redux/eventReducer';
 import { apiMiddleware } from './redux/apiMiddleware';
 import { Text, View } from 'react-native';
-import Events from './event';
+import Events from './event/events';
 
 const middleware = applyMiddleware(apiMiddleware);
 const store = createStore(eventReducer, middleware);
@@ -15,10 +15,7 @@ export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <View>
-          <Text>Hello</Text>
-          <Events />
-        </View>
+        <Events />
       </Provider>
     );
   }
