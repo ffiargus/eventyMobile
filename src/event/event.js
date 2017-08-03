@@ -29,23 +29,31 @@ export default class Event extends Component {
 
 const styles = StyleSheet.create({
   event: {
-    padding: 10,         // start below status bar
+    padding: 5,         // start below status bar
     margin: 10,
+    marginTop: 0,
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    backgroundColor: '#9099A2',
+    alignItems: 'center',
+    backgroundColor: '#6D7993',
     borderWidth: 1,
     borderRadius: 10
   },
   title: {
-
+    'textAlign': 'center',
+    'color': '#262228',
+    'fontWeight': 'bold',
+    'fontSize': 25
   },
   type: {
-
+    'textAlign': 'center',
+    'color': '#373737',
+    'fontWeight': '600'
   },
   image: {
-    width: 100,
-    height: 100
+    width: 70,
+    height: 70,
+    borderRadius: 10
   }
 });
